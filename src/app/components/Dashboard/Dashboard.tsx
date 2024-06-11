@@ -5,6 +5,18 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
+
+      <label
+                htmlFor="cover"
+                className="h-10 flex cursor-pointer items-center justify-center gap-2 rounded bg-primary px-2 py-1 text-sm font-medium text-white hover:bg-opacity-80 xsm:px-4"
+                onClick={()=> {
+                  console.log("CLICKED !")
+                }}
+              >    
+               <div><span className="text-lg">+</span>  <span>New request</span></div>
+              </label>
+
+
         {/* <CardDataStats title="Total views" total="$3.456K" rate="0.43%" levelUp>
           <svg
             className="fill-primary dark:fill-white"
